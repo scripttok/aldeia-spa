@@ -26,8 +26,6 @@ jobs:
           node-version: 22
       - name: Configurar pnpm
         uses: pnpm/action-setup@v4
-        with:
-          version: 10.4.1
       - name: Instalar dependências
         run: pnpm install --frozen-lockfile
       - name: Gerar site estático
