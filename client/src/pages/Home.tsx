@@ -104,64 +104,64 @@ const images = [
     title: "Voltar para o próprio ritmo",
   },
   {
-    src: "/assets/aldeia-real-08_d3f0c3b1_be645dc4.jpeg",
-    alt: "Detalhe de uma sala de cuidado do spa",
-    kicker: "08 · escuta",
-    title: "Um ambiente que sabe escutar",
-  },
-  {
-    src: "/assets/aldeia-real-09_47864258_de29d361.jpeg",
-    alt: "Textura natural presente no espaço do Aldeia Spa",
-    kicker: "09 · matéria",
-    title: "A natureza também participa",
-  },
-  {
-    src: "/assets/aldeia-real-10_6acf417f_60745b7f.jpeg",
-    alt: "Canto acolhedor para pausa e relaxamento",
-    kicker: "10 · pausa",
-    title: "Desacelerar também é cuidar",
-  },
-  {
     src: "/assets/aldeia-real-11_bc21b53c_9f34016b.jpeg",
     alt: "Interior iluminado do Aldeia Spa Wellness",
-    kicker: "11 · luz",
+    kicker: "08 · luz",
     title: "Luz para abrir espaço por dentro",
   },
   {
     src: "/assets/aldeia-real-12_3d16eaea_764ba6a5.jpeg",
     alt: "Detalhe arquitetônico do espaço do Aldeia Spa",
-    kicker: "12 · presença",
+    kicker: "09 · presença",
     title: "O corpo reconhece quando é bem-vindo",
   },
   {
     src: "/assets/aldeia-real15_417393dd.jpeg",
     alt: "Ambiente real do Aldeia Spa Wellness",
-    kicker: "13 · aldeia",
+    kicker: "10 · aldeia",
     title: "Um cuidado para viver no seu tempo",
   },
   {
     src: "/assets/aldeia-real16_dbede0e1.jpeg",
     alt: "Ambiente real do Aldeia Spa Wellness",
-    kicker: "14 · aldeia",
+    kicker: "11 · aldeia",
     title: "Um cuidado para viver no seu tempo",
   },
   {
     src: "/assets/aldeia-real17_7e13ad8a.jpeg",
     alt: "Ambiente real do Aldeia Spa Wellness",
-    kicker: "15 · aldeia",
+    kicker: "12 · aldeia",
     title: "Um cuidado para viver no seu tempo",
   },
   {
     src: "/assets/aldeia-real18_021a84b9.jpeg",
     alt: "Ambiente real do Aldeia Spa Wellness",
-    kicker: "16 · aldeia",
+    kicker: "13 · aldeia",
     title: "Um cuidado para viver no seu tempo",
   },
   {
     src: "/assets/aldeia-real19_a295064a.jpeg",
     alt: "Ambiente real do Aldeia Spa Wellness",
-    kicker: "17 · aldeia",
+    kicker: "14 · aldeia",
     title: "Um cuidado para viver no seu tempo",
+  },
+];
+
+const eventPhotos = [
+  {
+    src: "/assets/aldeia-real-08_d3f0c3b1_be645dc4.jpeg",
+    alt: "Atendimentos de massagem durante uma ação de bem-estar corporativo",
+    caption: "Bem-estar em eventos corporativos",
+  },
+  {
+    src: "/assets/aldeia-real-09_47864258_de29d361.jpeg",
+    alt: "Participantes reunidos em uma atividade de movimento e relaxamento",
+    caption: "Encontros de cuidado e movimento",
+  },
+  {
+    src: "/assets/aldeia-real-10_6acf417f_60745b7f.jpeg",
+    alt: "Mesa preparada para receber convidados em uma celebração",
+    caption: "Celebrações e momentos especiais",
   },
 ];
 
@@ -170,7 +170,6 @@ type Service = {
   short: string;
   description: string;
   icon: string;
-  angle: number;
   image?: string;
 };
 
@@ -181,7 +180,6 @@ const services: Service[] = [
     description:
       "​Spa dos Pés: Um alívio profundo para quem carrega o peso do mundo.Suas bases merecem o mais puro descanso, renovando as energias de todo o corpo",
     icon: "✦",
-    angle: 0,
   },
   {
     name: "Cone Hindu",
@@ -189,7 +187,6 @@ const services: Service[] = [
     description:
       " Uma técnica milenar que purifica, acalma a mente e traz um profundo silêncio interior através do equilíbrio energético.",
     icon: "✦",
-    angle: 22.5,
   },
   {
     name: "​Limpeza de Pele",
@@ -197,7 +194,6 @@ const services: Service[] = [
     description:
       " Muito mais que estética: um ritual de oxigenação e renovação que revela a luz natural da sua pele, com toque terapêutico.",
     icon: "✦",
-    angle: 45,
   },
   {
     name: "​Massagem Clássica",
@@ -205,7 +201,6 @@ const services: Service[] = [
     description:
       " O antídoto perfeito contra a tensão diária. Manobras fluidas que dissolvem o estresse e devolvem a leveza aos seus músculos.",
     icon: "✦",
-    angle: 67.5,
   },
   {
     name: "​Drenagem Linfática",
@@ -213,7 +208,6 @@ const services: Service[] = [
     description:
       "Movimentos leves e precisos que purificam o organismo, eliminam o inchaço e despertam uma sensação imediata de leveza.",
     icon: "✦",
-    angle: 90,
   },
   {
     name: "​Liberação Miofascial",
@@ -221,7 +215,6 @@ const services: Service[] = [
     description:
       " Alívio avançado para dores profundas e tensões crônicas, devolvendo a liberdade e a amplitude total aos seus movimentos.",
     icon: "✦",
-    angle: 112.5,
   },
   {
     name: "​Pedras Quentes",
@@ -229,7 +222,6 @@ const services: Service[] = [
     description:
       " O calor reconfortante das pedras vulcânicas derrete as armaduras do estresse, aquecendo a alma e relaxando cada fibra do seu corpo.",
     icon: "✦",
-    angle: 135,
   },
   {
     name: "​Bambu Terapia",
@@ -237,7 +229,6 @@ const services: Service[] = [
     description:
       "Uma massagem vigorosa e revigorante que modela o corpo, alivia tensões e renova profundamente a sua energia vital.",
     icon: "✦",
-    angle: 157.5,
   },
   {
     name: "​Drenagem Pós-Operatório",
@@ -245,7 +236,6 @@ const services: Service[] = [
     description:
       "Cuidado especializado e delicado, ideal para quem passou por cirurgias como lipoaspiração e abdominoplastia, acelerando a recuperação com segurança e conforto absoluto.",
     icon: "✦",
-    angle: 180,
   },
   {
     name: "​Movimento Consciente",
@@ -253,15 +243,13 @@ const services: Service[] = [
     description:
       "​Aula de Yoga: Um encontro sagrado entre respiração, corpo e mente. Fortaleça sua flexibilidade e encontre paz inabalável no momento presente.",
     icon: "✦",
-    angle: 202.5,
   },
   {
-    name: "Saúde Integrativa",
-    short: "Saúde Integrativa",
+    name: "Fisioterapia",
+    short: "Fisioterapia",
     description:
-      "Fisioterapia: Ciência e cuidado humanizado para reabilitar o seu corpo, prevenir lesões e devolver o prazer de se movimentar sem dor.",
+      "Ciência e cuidado humanizado para reabilitar o seu corpo, prevenir lesões e devolver o prazer de se movimentar sem dor.",
     icon: "✦",
-    angle: 225,
   },
   {
     name: "Psicologia",
@@ -269,7 +257,6 @@ const services: Service[] = [
     description:
       " Um espaço seguro, confidencial e acolhedor para cuidar da sua mente, expandir sua autoconsciência e resgatar sua paz emocional.",
     icon: "✦",
-    angle: 270,
   },
   {
     name: "Nutrição",
@@ -277,7 +264,6 @@ const services: Service[] = [
     description:
       " A ciência do alimento como medicina para a sua vitalidade, desenhada sob medida para a sua rotina e seus objetivos.",
     icon: "✦",
-    angle: 292.5,
   },
   {
     name: "Enfermagem Obstétrica",
@@ -285,14 +271,12 @@ const services: Service[] = [
     description:
       "Acolhimento especializado e humanizado para a gestação, o parto e o pós-parto, cuidando de você e do seu bebê com técnica e afeto.",
     icon: "✦",
-    angle: 315,
   },
   {
     name: "Pilates",
     short: "Pilates",
     description: "Força, mobilidade e estabilidade em cada movimento.",
     icon: "◒",
-    angle: 337.5,
   },
 ];
 
@@ -396,7 +380,9 @@ function Home() {
         <span>Aldeia da Serra · Barueri — SP</span>
         <span className="topline__right">
           <Clock3 size={13} strokeWidth={1.6} aria-hidden="true" />
-          <span>Atendimento das 08h às 20h</span>
+          <span>
+            Atendimento: seg. a sex., das 08h às 20h · sáb., das 08h às 17h
+          </span>
         </span>
       </div>
 
@@ -597,7 +583,8 @@ function Home() {
                 strokeDasharray="2 8"
               />
               {services.map((service, index) => {
-                const angle = ((service.angle - 90) * Math.PI) / 180;
+                const angle =
+                  (index / services.length) * Math.PI * 2 - Math.PI / 2;
                 const x = 280 + Math.cos(angle) * 184;
                 const y = 280 + Math.sin(angle) * 184;
                 return (
@@ -614,7 +601,8 @@ function Home() {
               })}
             </svg>
             {services.map((service, index) => {
-              const angle = ((service.angle - 90) * Math.PI) / 180;
+              const angle =
+                (index / services.length) * Math.PI * 2 - Math.PI / 2;
               const x = 50 + Math.cos(angle) * 33;
               const y = 50 + Math.sin(angle) * 33;
               return (
@@ -792,12 +780,36 @@ function Home() {
         </section>
 
         <section
+          className="event-gallery-section section-pad"
+          aria-labelledby="events-title"
+        >
+          <div className="event-gallery-heading">
+            <div>
+              <div className="eyebrow">05 / encontros especiais</div>
+              <h2 id="events-title">Eventos corporativos e aniversários.</h2>
+            </div>
+            <p>
+              Cuidado, movimento e momentos especiais para compartilhar dentro e
+              fora do Aldeia.
+            </p>
+          </div>
+          <div className="event-gallery-grid">
+            {eventPhotos.map(photo => (
+              <figure className="event-gallery-card" key={photo.src}>
+                <img src={photo.src} alt={photo.alt} loading="lazy" />
+                <figcaption>{photo.caption}</figcaption>
+              </figure>
+            ))}
+          </div>
+        </section>
+
+        <section
           id="visite"
           className="visit-section section-pad"
           aria-labelledby="visit-title"
         >
           <div className="visit-copy">
-            <div className="eyebrow">05 / encontre o seu lugar</div>
+            <div className="eyebrow">06 / encontre o seu lugar</div>
             <h2 id="visit-title">
               Um refúgio
               <br />
@@ -821,9 +833,9 @@ function Home() {
               <div className="visit-detail">
                 <Clock3 size={18} strokeWidth={1.4} aria-hidden="true" />
                 <span>
-                  Atendimento
+                  Seg. a sex.: 08h às 20h
                   <br />
-                  até 20h
+                  Sáb.: 08h às 17h
                 </span>
               </div>
             </div>
