@@ -381,7 +381,7 @@ function Home() {
         <span className="topline__right">
           <Clock3 size={13} strokeWidth={1.6} aria-hidden="true" />
           <span>
-            Atendimento: seg. a sex., das 08h às 20h · sáb., das 08h às 17h
+            Atendimento: seg. a sex. das 08h às 20h · sáb. das 08h às 17h
           </span>
         </span>
       </div>
