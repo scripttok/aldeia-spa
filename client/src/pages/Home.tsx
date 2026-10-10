@@ -417,7 +417,7 @@ function Home() {
           </a>
           <a
             className={activeSection === "cuidado" ? "is-active" : ""}
-            href="#cuidado"
+            href="#servicos"
             onClick={closeMenu}
             aria-current={activeSection === "cuidado" ? "location" : undefined}
           >
@@ -651,32 +651,6 @@ function Home() {
                 <em>conversa com você.</em>
               </h1>
             </div>
-            <div
-              className="partnership-panel"
-              aria-labelledby="partnership-title"
-            >
-              <div className="partnership-panel__eyebrow">
-                parcerias e benefícios
-              </div>
-              <h2 id="partnership-title">
-                Bem-estar que também cabe na sua rotina.
-              </h2>
-              <div className="partnership-panel__brand">
-                Wellhub <span>Gold em diante</span>
-              </div>
-              <p>
-                A partir do plano Gold, você pode integrar o Aldeia aos seus
-                rituais de autocuidado e desfrutar de:
-              </p>
-              <ul className="partnership-panel__benefits">
-                <li>Massagens</li>
-                <li>Drenagem linfática</li>
-                <li>Aulas de yoga</li>
-              </ul>
-              <small>
-                Consulte as condições de agendamento e disponibilidade.
-              </small>
-            </div>
           </div>
           <div className="pillars-grid">
             {pillars.map(pillar => {
@@ -886,6 +860,11 @@ function Home() {
             <ArrowUpRight size={15} />
           </a>
         </div>
+        <p className="footer-wellhub-note">
+          <strong>Wellhub (plano Gold em diante):</strong> acesso a massagens,
+          drenagem linfática e aulas de yoga, sujeito a agendamento e
+          disponibilidade.
+        </p>
         <div className="footer-bottom">
           <span>© 2026 Aldeia Spa Wellness</span>
           <span> Yoga · saúde · cuidado humanizado</span>

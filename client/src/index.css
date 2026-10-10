@@ -1137,6 +1137,17 @@ h2 em {
   font-weight: 700;
   letter-spacing: 0.1em;
 }
+.footer-wellhub-note {
+  margin: 0;
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(25, 42, 74, 0.16);
+  color: #66736a;
+  font-size: 10px;
+  line-height: 1.65;
+}
+.footer-wellhub-note strong {
+  color: #192a4a;
+}
 .footer-bottom {
   display: flex;
   align-items: center;
